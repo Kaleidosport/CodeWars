@@ -17,4 +17,13 @@ var uniqueInOrder=function(iterable){
 }
 
 I'm currently unable to get such a process, will have to look it up.
+
+Explanation provided by the author:
+
+[iterable] is an array containing iterable.
+[...iterable] is an array containing all the elements of iterable spread out.
+So if iterable = [1, 2, 3], then [iterable] would be [[1, 2, 3]], and [...iterable] would be [1, 2, 3].
+But in this case, iterable = 'some string', so spreading out the elements gives you ['s', 'o', 'm', ...] so you can work with it in filter.
+
+But also, sometimes, the iterable is just an array. In that case, it still doesn't hurt to copy the array into a new one.
 */
