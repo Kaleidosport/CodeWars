@@ -3,6 +3,7 @@
 function oddOrEven(arr) {
     return arr.reduce((a, b) => a + b, 0) % 2 ? "odd" : "even";
     // return arr.reduce(function(a, b) { return a + b }, 0) % 2 ? "odd" : "even";
+    // /!\ I was missing this 0 at first, meaning it lacked an initialValue /!\
   }
 
 /* Syntax reminder: [0, 1, 2, 3, 4].reduce(function(accumulateur, valeurCourante, index, array){
