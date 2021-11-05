@@ -1,8 +1,9 @@
-// Origin: 
+// Origin: https://www.codewars.com/kata/54da539698b8a2ad76000228
 
 // /!\ I first went with the following but it didn't sit good with some inputs mixing n, e, w and s /!\
 
 function isValidWalk(walk) {
+    // walk = walk.sort() This didn't work out either since order matters in this kinda kata
     if (walk.length === 10) {
       for (let i = 0; i < walk.length; i++) {
         if (walk[i].concat(walk[walk.length - i]) === "ns" || walk[i].concat(walk[walk.length - i]) === "sn" || walk[i].concat(walk[walk.length - i]) === "we" || walk[i].concat(walk[walk.length - i]) === "ew") {
