@@ -1,4 +1,4 @@
-// Origin: 
+// Origin: https://www.codewars.com/kata/57f7796697d62fc93d0001b8
 
 let trouble = (x, t) => {
     for (let i = 0; i < x.length; i++) {
